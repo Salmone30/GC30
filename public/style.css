@@ -1,0 +1,139 @@
+/* Importa il font Inter da Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1f2a44;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2a44;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1f2a44;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2a44;
+}
+
+input[type="email"],
+input[type="file"],
+input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    background-color: #f8fafc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1a73e8;
+    box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+}
+
+button {
+    background-color: #1a73e8;
+    color: #ffffff;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1557b0;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#responseMessage,
+#searchResults {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    color: #64748b;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05 W);
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}

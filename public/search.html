@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricerca Autografi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ricerca Autografi</h1>
+        <p>Inserisci il codice univoco ricevuto via email per visualizzare la tua richiesta.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Cerca la tua richiesta</h2>
+            <form id="searchForm">
+                <label for="requestId">Codice Univoco:</label><br>
+                <input type="text" id="requestId" name="requestId" placeholder="Es. GC30-20250719-4721" required><br>
+                <button type="submit">Cerca</button>
+            </form>
+            <div id="searchResults"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Certificazione Autografi. Tutti i diritti riservati.</p>
+    </footer>
+    <script src="search.js"></script>
+</body>
+</html>
